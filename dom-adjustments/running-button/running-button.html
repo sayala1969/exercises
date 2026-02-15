@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="running-button.css">
-    <script defer src="dont-look-running-button.js"></script>
+    <!-- <script defer src="dont-look-running-button.js"></script> -->
     <script defer src="running-button-solution.js"></script>
     <title>Catch me if you can</title>
 </head>
 <body>
+    <div class="scrim">
+        <p>Success</p>
+    </div>
     <h2>Catch me if you can</h2>
     <p>In this exercise, you will learn how to manipulate the DOM by making a button run away from the mouse cursor.</p>
     <ul>
-        <li>Use JavaScript to listen for mouse movements on the button and adjust its position accordingly.</li>
+        <li>Use JavaScript to listen for mouse hovering (mouseenter event) on the button and adjust its position accordingly.</li>
         <li>Ensure that the button moves in a random direction away from the cursor each time it is hovered over.</li>
         <li>Make sure the button stays within the bounds of the viewport.</li>
+        <li>Bonus: Add an event to "Freeze" button that, when clicked, stops the "Catch me if you can!" button from moving.</li>
+        <li>Add a click event to "Catch me if you can button" that, when clicked, it will display the scrim DIV element.</li>
     </ul>
-    <button class="running-button">Catch me if you can!</button>
+    <button class="pretty-button freeze">Freeze the other button</button>
+    <button class="pretty-button run">Catch me if you can!</button>
+
 </body>
 </html>
